@@ -61,3 +61,44 @@ The user luna has left her password in a file inside the muack folder.
 ***j3vkuoKQwvbhkMc***
 
 ---
+
+**7º Chanllenge:**
+***Task:*** <br> 
+The user eleanor has left her password in a file that occupies 6969 bytes.
+**Solution:**  <br>
+find / -size 6969c 2>/dev/null <br>
+cat /usr/share/moon.txt <br>
+***UNDchvln6Bmtu7b***
+
+---
+
+**8º Chanllenge:**
+***Task:*** <br> 
+The user victoria has left her password in a file in which the owner is the user violin.
+**Solution:**  <br>
+find / -user violin <br>
+cat /usr/local/games/yo <br>
+***pz8OqvJBFxH0cSj***
+
+---
+
+**9º Chanllenge:**
+***Task:*** <br> 
+The user isla has left her password in a zip file.
+**Solution:**  <br>
+vim paswOrd.zip <br>
+
+***D3XTob0FUImsoBb***
+
+---
+
+**10º Chanllenge:**
+***Task:*** <br> 
+The password of the user lucy is in the line that ends with 0JuAZ (these last 5 characters are not part of her password)
+**Solution:**  <br>
+grep '^a9HFX' <br>
+
+***WKINVzNQLKLDVAc***
+
+---
+
