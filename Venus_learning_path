@@ -1,55 +1,5 @@
-# 🚀 Nombre del Proyecto
+# 🚀 Venus HackMyVM
 
-**[Aquí iría una insignia, por ejemplo: ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)**
+In this file is described the progress of the learning challenge in Venus.
 
-Una breve y concisa descripción de tu proyecto. ¿Qué problema resuelve? ¿Para quién es?
-
----
-
-## 🌟 Características Principales
-
-* Característica 1: Hace **esto** de forma increíble.
-* Característica 2: Permite **aquello** fácilmente.
-* Característica 3: Es compatible con **X** e **Y**.
-* ...y mucho más.
-
----
-
-## 🛠️ Instalación
-
-Aquí explica cómo obtener una copia del proyecto y ponerlo en funcionamiento.
-
-### Prerrequisitos
-
-Asegúrate de tener instalado:
-
-* **[Node.js](https://nodejs.org/)** (versión 14 o superior)
-* **Git**
-
-### Pasos
-
-1.  Clona el repositorio:
-    ```bash
-    git clone [https://github.com/tu-usuario/nombre-del-proyecto.git](https://github.com/tu-usuario/nombre-del-proyecto.git)
-    ```
-2.  Navega al directorio del proyecto:
-    ```bash
-    cd nombre-del-proyecto
-    ```
-3.  Instala las dependencias:
-    ```bash
-    npm install
-    ```
-
----
-
-## ⚙️ Uso
-
-Describe cómo usar tu proyecto. Incluye ejemplos de código si aplica.
-
-### Ejecución de la aplicación
-
-Para iniciar la aplicación localmente:
-
-```bash
-npm start
+*** 1º Chanllenge:***
