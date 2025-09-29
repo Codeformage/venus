@@ -47,7 +47,17 @@ It seems that the user camila has left her password inside a folder called herei
 **Solution:**  <br>
  find / -type d -name hereiam <br>
  ls -a /opt/hereiam <br>
- cat /opt/hereiam .a <br>
+ cat /opt/hereiam/.here <br>
 ***F67aDmCAAgOOaOc***
+
+---
+
+**6º Chanllenge:**
+***Task:*** <br> 
+The user luna has left her password in a file inside the muack folder.
+**Solution:**  <br>
+ find ~ <br>
+ cat ./muack/111/111/muack <br>
+***j3vkuoKQwvbhkMc***
 
 ---
