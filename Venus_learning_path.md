@@ -94,11 +94,28 @@ vim paswOrd.zip <br>
 
 **10º Chanllenge:**
 ***Task:*** <br> 
-The password of the user lucy is in the line that ends with 0JuAZ (these last 5 characters are not part of her password)
+The password of the user violet is in the line that begins with a9HFX (these 5 characters are not part of her password.).
 **Solution:**  <br>
 grep '^a9HFX' <br>
 
 ***WKINVzNQLKLDVAc***
 
 ---
+
+**11º Chanllenge:**
+***Task:*** <br> 
+The password of the user lucy is in the line that ends with 0JuAZ (these last 5 characters are not part of her password)
+**Solution:**  <br>
+grep '0JuAZ$' end <br>
+
+***OCmMUjebG53giud***
+
+**12º Chanllenge:**
+***Task:*** <br> 
+The password of the user elena is between the characters fu and ck
+**Solution:**  <br>
+grep -oP '(?<=fu).*?(?=ck)' file.yo <br>
+
+***4xZ5lIKYmfPLg9t***
+
 
