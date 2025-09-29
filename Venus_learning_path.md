@@ -35,9 +35,19 @@ sed -n '4069p' findme.txt <br>
 
 **4º Chanllenge:**
 ***Task:*** <br> 
-The password of the user emma is in line 4069 of the file findme.txt
+User mia has left her password in the file -
 **Solution:**  <br>
-sed -n '4069p' findme.txt <br>
-***fIvltaGaq0OUH8O***
+cat ./- <br>
+***iKXIYg0pyEH2Hos***
+
+---
+**5º Chanllenge:**
+***Task:*** <br> 
+It seems that the user camila has left her password inside a folder called hereiam
+**Solution:**  <br>
+ find / -type d -name hereiam <br>
+ ls -a /opt/hereiam <br>
+ cat /opt/hereiam .a <br>
+***F67aDmCAAgOOaOc***
 
 ---
