@@ -214,10 +214,61 @@ base64 -d eloise > eloise.jpg  (in local, previously I made a scp) <br>
 
 ---
 
-**21º Chanllenge:**
+**22º Chanllenge:**
 ***Task:*** <br> 
 User lucia has been creative in saving her password.
 **Solution:**  <br>
+echo '7576 4d77 4644 5172 5157 504d 6547 500a' | xxd -r -p <br>
 
+***uvMwFDQrQWPMeGP***
 
-***yOUJlV0SHOnbSPm***
+---
+
+**23º Chanllenge:**
+***Task:*** <br> 
+The user isabel has left her password in a file in the /etc/xdg folder but she does not remember the name, however she has dict.txt that can help her to remember.
+**Solution:**  <br>
+cat dict.txt | xargs -I {} find /etc/xdg/{} -maxdepth 0 2>/dev/null -print <br>
+
+***H5ol8Z2mrRsorC0***
+
+---
+
+**24º Chanllenge:**
+***Task:*** <br> 
+The password of the user freya is the only string that is not repeated in different.txt
+**Solution:**  <br>
+uniq -u different.txt cat <br>
+
+***EEDyYFDwYsmYawj***
+
+---
+
+**25º Chanllenge:**
+***Task:*** <br> 
+User alexa puts her password in a .txt file in /free every minute and then deletes it.
+**Solution:**  <br>
+while true; do [ -f /free/* ] && cat /free/*; sleep 1; done <br>
+
+***mxq9O3MSxxX9Q3S***
+
+---
+
+**26º Chanllenge:**
+***Task:*** <br> 
+The password of the user ariel is online! (HTTP)
+**Solution:**  <br>
+curl localhost <br>
+
+***33EtHoz9a0w2Yqo***
+
+---
+
+**27º Chanllenge:**
+***Task:*** <br> 
+Seems that ariel dont save the password for lola, but there is a temporal file.
+**Solution:**  <br>
+<br>
+
+******
+
