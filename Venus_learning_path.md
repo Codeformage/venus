@@ -174,8 +174,29 @@ find / -type f -mtime +$((55*365)) 2>dev>null
 
 **18º Chanllenge:**
 ***Task:*** <br> 
-The password of the clara user is found in a file modified on May 1, 1968.
+The password of user frida is in the password-protected zip (rockyou.txt can help you)
 **Solution:**  <br>
-find / -type f -mtime +$((55*365)) 2>dev>null
 
-***39YziWp5gSvgQN9***
+
+***Ed4ErEUJEaMcXli***
+
+---
+
+**19º Chanllenge:**
+***Task:*** <br> 
+The password of eliza is the only string that is repeated (unsorted) in repeated.txt.
+**Solution:**  <br>
+uniq -d repeated.txt
+
+***Fg6b6aoksceQqB9***
+
+---
+
+**20º Chanllenge:**
+***Task:*** <br> 
+The user iris has left me her key.v
+**Solution:**  <br>
+ls -a <br>
+ssh -i .iriskey iris@venus 
+
+***kYjyoLcnBZ9EJdz***
