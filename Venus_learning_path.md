@@ -110,6 +110,8 @@ grep '0JuAZ$' end <br>
 
 ***OCmMUjebG53giud***
 
+---
+
 **12º Chanllenge:**
 ***Task:*** <br> 
 The password of the user elena is between the characters fu and ck
@@ -118,4 +120,62 @@ grep -oP '(?<=fu).*?(?=ck)' file.yo <br>
 
 ***4xZ5lIKYmfPLg9t***
 
+---
 
+**13º Chanllenge:**
+***Task:*** <br> 
+The user alice has her password is in an environment variable.
+**Solution:**  <br>
+env
+
+***Cgecy2MY2MWbaqt***
+
+---
+
+**14º Chanllenge:**
+***Task:*** <br> 
+The admin has left the password of the user anna as a comment in the file passwd.
+**Solution:**  <br>
+cat /etc/passwd
+
+***w8NvY27qkpdePox***
+
+---
+
+**15º Chanllenge:**
+***Task:*** <br> 
+Maybe sudo can help you to be natalia.
+**Solution:**  <br>
+sudo -i -u natalia
+
+******
+
+---
+
+**16º Chanllenge:**
+***Task:*** <br> 
+The password of user eva is encoded in the base64.txt file
+**Solution:**  <br>
+echo dXBzQ0EzVUZ1MTBmREFPCg== | base64 --decode
+
+***upsCA3UFu10fDAO***
+
+---
+
+**17º Chanllenge:**
+***Task:*** <br> 
+The password of the clara user is found in a file modified on May 1, 1968.
+**Solution:**  <br>
+find / -type f -mtime +$((55*365)) 2>dev>null
+
+***39YziWp5gSvgQN9***
+
+---
+
+**18º Chanllenge:**
+***Task:*** <br> 
+The password of the clara user is found in a file modified on May 1, 1968.
+**Solution:**  <br>
+find / -type f -mtime +$((55*365)) 2>dev>null
+
+***39YziWp5gSvgQN9***
