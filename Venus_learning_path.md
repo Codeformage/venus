@@ -200,3 +200,24 @@ ls -a <br>
 ssh -i .iriskey iris@venus 
 
 ***kYjyoLcnBZ9EJdz***
+
+---
+
+**21º Chanllenge:**
+***Task:*** <br> 
+User eloise has saved her password in a particular way.
+**Solution:**  <br>
+After few revisions I noticed that is coded in base64 and is a jpg file <br>
+base64 -d eloise > eloise.jpg  (in local, previously I made a scp) <br>
+
+***yOUJlV0SHOnbSPm***
+
+---
+
+**21º Chanllenge:**
+***Task:*** <br> 
+User lucia has been creative in saving her password.
+**Solution:**  <br>
+
+
+***yOUJlV0SHOnbSPm***
