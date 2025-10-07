@@ -268,7 +268,165 @@ curl localhost <br>
 ***Task:*** <br> 
 Seems that ariel dont save the password for lola, but there is a temporal file.
 **Solution:**  <br>
+opne with vim the .goas.swp and recover it and try every password<br>
+
+
+VVjqJGRrnfKmcgD No 
+bnQgcXYamhSDSff
+QsymOOVbzSaKmRm
+cbjYGSvqAsqIvdg
+LkWReDaaLCMDlLf
+DabEJLmAbOQxEnD
+mYhQVLDKdJrsIwG
+d3LieOzRGX5wud6 Si
+EKvJoTBYlwtwFmv no
+PEOppdOkSqJZweH no
+rSkPlPhymYcerMJ no
+GBUguuSpXVjpxLc no
+NdnszvjulNellbK no
+IaOpTdAuhSjGZnu no
+RGBEMbZHZRgXZnu no 
+rxhKeFKveeKqpwp no
+cOXlRYXtJWnVQEG no
+ppkJjqYvSCIyAhK No 
+
+***d3LieOzRGX5wud6***
+
+**28º Chanllenge:**
+***Task:*** <br> 
+The user celeste has left a list of names of possible .html pages where to find her password.
+**Solution:**  <br>
+find / -type f -name "*.html" 2>/dev/null | \
+awk -F'/' '{gsub(/\.html$/, "", $NF); print $NF}' | \
+grep -Ff pages.txt | \
+while read PAGE; do
+    # Ejecuta curl, obtiene el código de estado y lo guarda en la variable STATUS
+    STATUS=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost/${PAGE}.html")
+    
+    # Compara el código de estado (200 es éxito)
+    if [ "$STATUS" -eq 200 ]; then
+        echo "http://localhost/$PAGE.html"  # Imprime solo la URL
+    fi
+done <br>
+Only I have to chek index, cebolla and index.nginx-debian.html <br>
+lola@venus:~$ curl http://localhost/index.html <br>
+33EtHoz9a0w2Yqo <br>
+lola@venus:~$ curl http://localhost/cebolla.html <br>
+VLSNMTKwSV2o8Tn <br>
+
+***VLSNMTKwSV2o8Tn***
+
+---
+
+**29º Chanllenge:**
+***Task:*** <br> 
+The user celeste has access to mysql but for what? <br>
+**Solution:**  <br>
 <br>
 
-******
+***mxq9O3MSxxX9Q3S***
+MariaDB [venus]> SELECT * FROM people;
++-----------+---------------+--------------------------------+
+| id_people | uzer          | pazz                           |
++-----------+---------------+--------------------------------+
+|         1 | nuna          | ixpfdsvcxeqdW                  |
+|         2 | nona          | ixpvcxvcxeqdW                  |
+|         3 | manue         | ixpfdsfdseqdW                  |
+|         4 | samoa         | ixperrewrweqdW                 |
+|         5 | dsaewq        | ixpefdsfsqdW                   |
+|         6 | fdsfewrew     | ixpedvcxv4qdW                  |
+|         7 | koiuoiudsadas | ixpredsfdeqdW                  |
+|         8 | vcxfdsfew     | ixp342432eqdW                  |
+|         9 | dasd          | ixpeiuyiuyqdW                  |
+|        10 | helen         | uytuytjhgixpeqdW               |
+|        11 | tudou         | ijhgjghxpeqfdfsfddW            |
+|        12 | fdsoiurew     | ixpfdsfsdsvcxvcxeqdW           |
+|        13 | inan          | imbnmnbxpeqdW                  |
+|        14 | zkret         | ixpeqkjhkhjkdW                 |
+|        15 | cjhcx         | i432423xpeqdW                  |
+|        16 | sfdfdsml      | ixpeqdsfsdfdsfW                |
+|        17 | svcxvcxml     | 432423ixpeqdW                  |
+|        18 | xml           | ixpejhgjhgqdW                  |
+|        19 | pdf           | ixperewrewrewqdW               |
+|        20 | txt           | ixpeuytuytqdW                  |
+|        21 | vcxvcx        | ixpefdsfdsfdfdsqdW             |
+|        22 | dsadsa        | ixpeqdjhkjhW                   |
+|        23 | lel           | ixpvcxvcxvcxeqdW               |
+|        24 | lul           | ixpeqdmnbmnbmnbmW              |
+|        25 | dog           | ixperewrewrewqdW               |
+|        26 | cat           | ixvcxvdsfsdvpeqdW              |
+|        27 | pet           | ixiufohsyuoirewpeqdW           |
+|        28 | pzzz          | ixvcxvcxvpeqdW                 |
+|        29 | ls            | ixpehgfdhdhqdW                 |
+|        30 | vi            | ixpetrvvrqdW                   |
+|        31 | tmux          | iuovcxoiujvcxixpeqdW           |
+|        32 | screen        | ixpeqrewregfdgdW               |
+|        33 | yes           | ixpebvcgdfgqdW                 |
+|        34 | nop           | ixpefdsqdW                     |
+|        35 | haha          | 8===xKmPDsJSKpHLzkqKXyjx===D~~ |
+|        36 | love          | ixpegfdgqdW                    |
+|        37 | dsadsa        | fdsvcxvcxixpeqdW               |
+|        38 | d4t4          | erwerewreixpeqdW               |
+|        39 | nna           | gdfgdixpeqdW                   |
+|        40 | nin           | aaafdixpeqdW                   |
+|        41 | tre           | fdsafixpeqdW                   |
+|        42 | tfas          | igfdgfdgxpeqdW                 |
+|        43 | zcxc          | ixfdgdfgpeqdW                  |
+|        44 | yuio          | ixpgbvcbvcbeqdW                |
+|        45 | jhgyurtrt     | treterterixpeqdW               |
+|        46 | lodsa         | itreterxpeqdW                  |
+|        47 | zarah         | ixpvcbvcbeqdW                  |
+|        48 | zkkad         | ixpedfgvbcxbvcqdW              |
+|        49 | bvher         | vcxvcxgfdgfdixpeqdW            |
+|        50 | dsadsa        | ixpeqergdfwer32dW              |
+|        51 | ch4rm         | ixpeewf23qdW                   |
+|        52 | Aza           | ixpjhgjgheqdW                  |
+|        53 | avij          | ixpegfdgdfgqdW                 |
+|        54 | crom          | ixpefdbvvcbrqdW                |
+|        55 | bubu          | ixpetretretqdW                 |
+|        56 | bebe          | ixpeghfgfdqdW                  |
+|        57 | baba          | ixpeffesfqdW                   |
+|        58 | bael          | ixpesdvsdvsdqdW                |
+|        59 | vaze          | ixpe23r23rf23qdW               |
+|        60 | upper         | ixpe43r43rqdW                  |
+|        61 | loz           | ixpeqddfsdW                    |
+|        62 | mind          | ixpfsdfsdfsdeqdW               |
+|        63 | mymy          | ixpevcxvqdW                    |
+|        64 | ina           | ixpee23e32rqdW                 |
+|        65 | ein           | ixpejytjytjhgjqdW              |
+|        66 | n1n4          | ixpehgjghjhghgqdW              |
+|        67 | where         | ixljkgjgpeqdW                  |
+|        68 | you           | ixpeqdhggjhgjW                 |
+|        69 | are           | ixVCXVCXVCXVCXdW               |
+|        70 | what          | ixpeqhgjggdW                   |
+|        71 | dsaqqqqqq     | ixpeqVCXVCXdW                  |
+|        72 | h0j3n         | ixpemnbmbnmghqdW               |
+|        73 | nana          | ixpeqVSDFWCdW                  |
+|        74 | nina          | ixpeqdWuvC5N9kG                |
+|        75 | nunu          | ixpeSFDSFDSVCXqdW              |
+|        76 | fdse          | ixpeDFSWEF2qdW                 |
+|        77 | dsar          | ixpeF43F3F34qdW                |
+|        78 | yop           | ixpeqdWCSDFDSFD                |
+|        79 | loco          | ixpeF43F34F3qdW                |
+|        80 | zaza          | ixpeYUTHNYGTHYTqdW             |
+|        81 | jhon          | ixpeFDSJYTUJTYqdW              |
+|        82 | tell          | ixpeHYTTqdW                    |
+|        83 | ma            | uyixptje4FSFWEFqdW             |
+|        84 | mum           | jghixpeqdW                     |
+|        85 | nanaa         | 432432ixpeqdW                  |
+|        86 | nnnniinn      | irewxpeqdW                     |
+|        87 | iourewoiure   | rewixpeqdW                     |
+|        88 | lkjfdsoiu     | dsaixpeqdW                     |
+|        89 | vcxnoj        | dasdasixpeqdW                  |
+|        90 | ioyuwer       | ixpeqdvcxvcxW                  |
+|        91 | kaka          | ixpeqdW                        |
+|        92 | nini          | ixpeqdvcxW                     |
+|        93 | zong          | ixpeqdWfdsfsdf                 |
+|        94 | nana          | ixpefdsafdsqdW                 |
+|        95 | ninna         | ixpeqOPUIFDSFDSdW              |
+
+with hydra tested all user and passwords and nina was the one <br>
+
+--- 
+
 
