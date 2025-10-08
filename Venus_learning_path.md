@@ -431,4 +431,67 @@ with hydra tested all user and passwords and nina was the one <br>
 
 --- 
 
+**30º Chanllenge:**
+***Task:*** <br> 
+The user kira is hidding something in http://localhost/method.php <br>
+**Solution:**  <br>
+curl -X PUT http://localhost/method.php
+<br>
+***tPlqxSKuT4eP3yr***
+
+--- 
+
+**31º Chanllenge:**
+***Task:*** <br> 
+The user veronica visits a lot http://localhost/waiting.php <br>
+**Solution:**  <br>
+curl -H "User-Agent: PARADISE" http://localhost/waiting.php
+<br>
+***QTOel6BodTx2cwX***
+
+--- 
+
+**32º Chanllenge:**
+***Task:*** <br> 
+The user veronica uses a lot the password from lana, so she created an alias.<br>
+**Solution:**  <br>
+curl -H "User-Agent: PARADISE" http://localhost/waiting.php
+alias <br>
+***UWbc0zNEVVops1v***
+
+--- 
+
+**33º Chanllenge:**
+***Task:*** <br> 
+The user noa loves to compress her things.<br>
+**Solution:**  <br>
+gzip -d zip.gz <br>
+file zip.gz <br>
+tar -xf zip.gz <br>
+
+***9WWOPoeJrq6ncvJ***
+
+--- 
+
+**34º Chanllenge:**
+***Task:*** <br> 
+The user noa loves to compress her things.<br>
+**Solution:**  <br>
+file trash <br>
+strings -n 8 <br>
+***DO NOT COPY THE N OF THE BEGINING***
+
+***h1hnDPHpydEjoEN***
+
+--- 
+
+**34º Chanllenge:**
+***Task:*** <br> 
+The user noa loves to compress her things.<br>
+**Solution:**  <br>
+file trash <br>
+strings -n 8 <br>
+***DO NOT COPY THE N OF THE BEGINING***
+
+***h1hnDPHpydEjoEN***
 
